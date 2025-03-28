@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header>
+    <div class="container">
+      <ul class="menu">
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work">Work Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="container">
+      <div class="profile">
+        <div class="profile-img">
+          <img src="profile/1.svg" alt="Ziheng (Jack) Chen" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+        </div>
+        <div class="profile-info">
+          <h1>Ziheng (Jack) Chen</h1>
+          <p class="summary">
+            Ziheng (Jack) Chen is a highly skilled computer engineer with extensive experience in site reliability engineering, software development, and data engineering. He has a proven track record of improving system stability, optimizing workflows, and developing innovative solutions to complex problems. His technical expertise spans programming languages, cloud infrastructure, machine learning, and web development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Master of Science in Computer Engineering</h3>
+          <span>Expected May 2025</span>
+          <p>University of Illinois Urbana-Champaign (UIUC)</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Bachelor of Science in Computer Engineering</h3>
+          <span>May 2023</span>
+          <p>University of Illinois Urbana-Champaign (UIUC)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Work Experience Section -->
+  <section id="work">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Site Reliability Engineer Intern</h3>
+          <span>Talos Trading, June 2024 – Aug 2024</span>
+          <p>Improved system stability using Python by provisioning upgraded hardware in GCP based on past usage metrics, boosting performance by 50% and reducing costs by 25%, saving $100K monthly. Designed an interactive TypeScript and Node.js webpage to visualize GCP infrastructure and market data connections. Integrated Datadog API with Flask, enhancing system visibility and reducing troubleshooting time by 2 hours daily. Optimized order reconciliation workflows by configuring Cloud Composer in GCP using Terraform and integrating BigQuery, centralizing proactive business alerts and uncovering a potential $1.5M annual cost increase. Automated market data failover and remote log retrieval with Bash scripts in Octopus Deploy, reducing downtime by 30%. Integrated validation checks into the release pipeline with Datadog alerts, reducing deployment time by 2 hours. Implemented YAML linting with GitHub Actions in submodules, reducing configuration errors by 30%. Traced logs across platform components in Linux using Postgres, conducting root cause analysis on cross-functional issues.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Software Engineer Intern (co-op)</h3>
+          <span>StoneX Group, Jan 2023 – June 2023</span>
+          <p>Built a pipeline using Python and pandas to benchmark commodity futures indices with 200+ configurations. Identified the optimal configuration, surpassing 10-year return performance targets by 23.3%. Devised a system for version-controlling Databricks data processing tasks, reducing deployment errors by 25%. Developed a CI/CD pipeline in Azure DevOps to migrate Databricks notebooks and jobs to production using REST APIs, validated through edge-case testing of workload status, properties, and parameters.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Data Engineer Intern (co-op)</h3>
+          <span>StoneX Group, Aug 2022 – Dec 2022</span>
+          <p>Integrated Okta authentication into a Streamlit webpage via an Envoy Proxy microservice, using bearer tokens for user-specific access control, eliminating unauthorized access. Designed a Splunk dashboard to track real-time usage by user group, identifying popular content for prioritization. Streamlined the data curation ETL pipeline by migrating from Apache Airflow to a scheduled Databricks workflow, leveraging Azure Blob Storage for staging data and reducing load times from 150 seconds to 5 seconds.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Data Engineer Intern</h3>
+          <span>Ecolab, May 2022 – July 2022</span>
+          <p>Profiled Snowflake tables using JinjaSQL to identify key statistics, outliers, and trends, boosting data integrity. Processed 19,300 hours of dishwasher service logs from Snowflake using Azure Cognitive Services, identified six root causes, and guided improvements for future product revisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              GPU Failure Analysis in Delta Supercomputer
+            </div>
+            <div class="card-back">
+              <h3>GPU Failure Analysis in Delta Supercomputer</h3>
+              <p>Pre-processed 6B+ Delta Supercomputer log lines, removing noise through error deduplication and keyword matching. Boosted processing speed by 100x using Hyperscan and Python multiprocessing for error extraction. Analyzed NVIDIA GPU failure modes for AI workloads, uncovered error propagation paths that impacted 361K user jobs.</p>
+              <a href="#" target="_blank">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              Traffic Risk Assessment and Mitigation
+            </div>
+            <div class="card-back">
+              <h3>Traffic Risk Assessment and Mitigation</h3>
+              <p>Developed a novel traffic risk assessment method to enhance AV resiliency in unfamiliar, accident-prone scenarios. Simulated 6,000 scenarios from NHTSA pre-crash typologies and trained lightweight Double DQN Reinforcement Learning Agents in PyTorch to preemptively brake using traffic risk as an indicator, reducing accidents by 72.7%.</p>
+              <a href="#" target="_blank">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container contact">
+      <h2>Contact Me</h2>
+      <div class="social-icons">
+        <a href="mailto:zihengchen2000@gmail.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ziheng (Jack) Chen. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- JavaScript for extra interactivity -->
+  <script>
+    // Smooth scroll for internal links (if browser doesn't support CSS scroll-behavior)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+    
+    // Intersection Observer for unfolding timeline items on scroll
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+    
+    timelineItems.forEach(item => {
+      observer.observe(item);
+    });
+  </script>
+</body>
+</html>
